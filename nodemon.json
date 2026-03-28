@@ -1,0 +1,9 @@
+{
+    "env": {
+        "DB_USER": "ranima",
+        "DB_PASSWORD": "ranima",
+        "DB_NAME": "mern",
+        "GOOGLE_API_KEY": "AIzaSyBDTtOP62fCBSxjUl0UZqsN54sKhNhIrQo",
+        "JWT_KEY": "supersecret_dont_share"
+    }
+}
