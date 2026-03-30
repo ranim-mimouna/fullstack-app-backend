@@ -21,9 +21,11 @@ const getUsers = async (req, res, next) => {
 
 const signup = async (req, res, next) => {
   const errors = validationResult(req);
+
+  console.log('REQ BODY:', req.body);
+  console.log('REQ FILE:', req.file);
+
   if (!errors.isEmpty()) {
-    console.log('REQ BODY:', req.body);
-    console.log('REQ FILE:', req.file);
     console.log('VALIDATION ERRORS:', errors.array());
     return next(
       new HttpError('Invalid inputs passed, please check your data.', 422)
